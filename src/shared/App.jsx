@@ -4,7 +4,7 @@ import Projects from "../Pages/Projects";
 import AboutMe from "../Pages/AboutMe";
 import ContactMe from "../Pages/Contact";
 import React, { Component } from "react";
-import NavBar from "../components/NavBar";
+import MyNavBar from "../components/NavBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 export default class App extends Component {
@@ -13,7 +13,7 @@ export default class App extends Component {
       <div>
         <CssBaseline />
         <Router>
-          <NavBar />
+          <MyNavBar />
           <Switch>
             <Route path="/AboutMe" component={AboutMe} />
             <Route path="/Projects" component={Projects} />
