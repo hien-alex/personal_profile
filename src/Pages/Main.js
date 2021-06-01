@@ -1,9 +1,26 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
+import { Spring } from "react-spring";
 
 export default function MainPage() {
   return (
+    // <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+    //   {(props) => (
+    //     <div
+    //       style={{
+    //         height: 100,
+    //         width: 100,
+    //         backgroundColor: "pink",
+    //         color: "#fff",
+    //         ...props,
+    //       }}
+    //     >
+    //       1
+    //     </div>
+    //   )}
+    // </Spring>
     <Container maxWidth="md">
       <Typography
         component="div"
