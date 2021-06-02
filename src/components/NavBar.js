@@ -15,7 +15,7 @@ import {
   NavLinks,
 } from "./NavElements";
 
-function MyNavBar() {
+function MyNavBar({ toggle }) {
   // const fade = useSpring({
   //   config: { duration: 1000 },
   //   from: { opacity: 0 },
@@ -37,26 +37,26 @@ function MyNavBar() {
   //   opacity: 1,
   // });
 
-  const menuData = [
-    { title: "Home", link: "/" },
-    { title: "Contact", link: "/contact" },
-    { title: "About", link: "/aboutme" },
-    { title: "Projects", link: "/projects" },
-  ];
-
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Alex Hien</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/about">About</NavLinks>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="projects">Projects</NavLinks>
             </NavItem>
           </NavMenu>
+          <div />
         </NavbarContainer>
       </Nav>
     </>

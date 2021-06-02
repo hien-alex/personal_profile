@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
-import { Link as LinkR } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import styled, { css } from "styled-components/macro";
 
@@ -26,18 +26,18 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 20px;
-  max-width: 1100px;
+  padding: 0 0px;
+  max-width: 100%;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(Link)`
   color: white;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1rem;
   display: flex;
   align-items: center;
-  margin-left: 0px;
+  margin-left: 10px;
   text-decoration: none;
   font-weight: bold;
 
@@ -67,7 +67,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 90px;
+  margin-top: 12px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -87,7 +88,12 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 3px solid blue;
+  &:active {
+    border-bottom: 5px solid silver;
+  }
+
+  &:hover {
+    color: white;
+    text-decoration: none;
   }
 `;
