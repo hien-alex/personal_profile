@@ -14,6 +14,7 @@ export default class App extends Component {
         <CssBaseline />
         <Router>
           <MyNavBar />
+          <h1>hi</h1>
           <Switch>
             <Route path="/AboutMe" component={AboutMe} />
             <Route path="/Projects" component={Projects} />
