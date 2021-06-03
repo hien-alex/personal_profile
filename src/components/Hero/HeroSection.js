@@ -8,10 +8,10 @@ import {
   HeroP,
   HeroImg,
 } from "./HeroElements";
-import background1 from "../Videos/background1.mp4";
+import background1 from "../../Videos/background1.mp4";
 import { useSpring, animated } from "react-spring";
-import "../css/heroSection.css";
-import Snoopy_Peanuts from "../Images/Snoopy_Peanuts.png";
+import "../../css/heroSection.css";
+import Snoopy_Peanuts from "../../Images/Snoopy_Peanuts.png";
 
 const HeroSection = () => {
   const fade1 = useSpring({
@@ -25,7 +25,7 @@ const HeroSection = () => {
     opacity: 1,
   });
   const fade3 = useSpring({
-    config: { duration: 5000 },
+    config: { duration: 4000 },
     from: { opacity: 0 },
     opacity: 1,
   });
@@ -44,7 +44,7 @@ const HeroSection = () => {
           </HeroP>
         </HeroH1>
 
-        <HeroImg src={Snoopy_Peanuts} />
+        <HeroImg style={fade3} src={Snoopy_Peanuts} />
       </HeroContent>
     </HeroContainer>
   );

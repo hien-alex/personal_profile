@@ -40,7 +40,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  left: 10%;
+  left: 7%;
   margin-left: 6vw;
   margin-top: 100px;
 
@@ -81,7 +81,7 @@ export const HeroP = styled(animated.p)`
   }
 `;
 
-export const HeroImg = styled.img`
+export const HeroImg = styled(animated.img)`
   height: 400px;
   width: 400px;
   margin-top: 10vh;

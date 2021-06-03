@@ -1,4 +1,4 @@
-import "../css/Nav.css";
+import "../../css/Nav.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";

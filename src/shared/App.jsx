@@ -5,8 +5,8 @@ import AboutMe from "../Pages/AboutMe";
 import ContactMe from "../Pages/Contact";
 import React, { Component } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import NavSideBar from "../components/NavSideBar";
-import HeroSection from "../components/HeroSection";
+import NavSideBar from "../components/Nav/NavSideBar";
+import HeroSection from "../components/Hero/HeroSection";
 
 export default class App extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class App extends Component {
         <CssBaseline />
         <Router>
           <NavSideBar />
-          <HeroSection />
+          <HeroSection id="heroSection" />
           {/* <Switch>
             <Route path="/about" component={AboutMe} />
             <Route path="/projects" component={Projects} />
