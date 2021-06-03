@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components/macro";
+import { useSpring, animated } from "react-spring";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -34,24 +35,26 @@ export const VideoBg = styled.video`
 export const HeroContent = styled.div`
   justify-content: space-between;
   z-index: 3;
-  max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
   left: 10%;
+  margin-top: 60px;
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    margin-top: 50px;
   }
 `;
 
-export const HeroH1 = styled.h1`
-  color: white;
+export const HeroH1 = styled(animated.h1)`
   font-size: 48px;
-  text-align: center;
-  margin-left: 15vw;
+  text-align: left;
+  margin-top: 10vh;
 
+  color: #e5e5e5;
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
@@ -61,18 +64,18 @@ export const HeroH1 = styled.h1`
   }
 `;
 
-export const HeroP = styled.p`
+export const HeroP = styled(animated.p)`
   margin-stop: 24px;
-  color: white;
-  font-size: 24px;
-  text-align: center;
+  color: #e5e5e5;
+  font-size: 22px;
+  text-align: left;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
