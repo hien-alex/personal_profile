@@ -41,6 +41,7 @@ export const HeroContent = styled.div`
   flex-direction: row;
   align-items: center;
   left: 10%;
+  margin-left: 6vw;
   margin-top: 100px;
 
   @media screen and (max-width: 768px) {
