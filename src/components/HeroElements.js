@@ -41,18 +41,18 @@ export const HeroContent = styled.div`
   flex-direction: row;
   align-items: center;
   left: 10%;
-  margin-top: 60px;
+  margin-top: 100px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 `;
 
 export const HeroH1 = styled(animated.h1)`
   font-size: 48px;
   text-align: left;
-  margin-top: 10vh;
+  margin-top: 7vh;
 
   color: #e5e5e5;
   @media screen and (max-width: 768px) {
@@ -77,5 +77,22 @@ export const HeroP = styled(animated.p)`
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
+  }
+`;
+
+export const HeroImg = styled.img`
+  height: 400px;
+  width: 400px;
+  margin-top: 10vh;
+  margin-left: -120px;
+
+  @media screen and (max-width: 768px) {
+    height: 250px;
+    width: 250px;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 150px;
+    width: 150px;
   }
 `;

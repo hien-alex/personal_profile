@@ -6,6 +6,7 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
+  HeroImg,
 } from "./HeroElements";
 import background1 from "../Videos/background1.mp4";
 import { useSpring, animated } from "react-spring";
@@ -42,9 +43,8 @@ const HeroSection = () => {
             about my life....details about my life....
           </HeroP>
         </HeroH1>
-        <HeroH1 style={fade3} className="rightColumn">
-          <img className="pictureOfMe" src={Snoopy_Peanuts} />
-        </HeroH1>
+
+        <HeroImg src={Snoopy_Peanuts} />
       </HeroContent>
     </HeroContainer>
   );
