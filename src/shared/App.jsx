@@ -4,8 +4,10 @@ import Projects from "../Pages/Projects";
 import AboutMe from "../Pages/AboutMe";
 import ContactMe from "../Pages/Contact";
 import React, { Component } from "react";
-import MyNavBar from "../components/NavBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import NavSideBar from "../components/Nav/NavSideBar";
+import HeroSection from "../components/Hero/HeroSection";
+import About from "../components/About/About";
 
 export default class App extends Component {
   render() {
@@ -13,13 +15,15 @@ export default class App extends Component {
       <div>
         <CssBaseline />
         <Router>
-          <MyNavBar />
-          <Switch>
-            <Route path="/AboutMe" component={AboutMe} />
-            <Route path="/Projects" component={Projects} />
-            <Route path="/Contact" component={ContactMe} />
+          <NavSideBar />
+          <HeroSection id="home" />
+          <About />
+          {/* <Switch>
+            <Route path="/about" component={AboutMe} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={ContactMe} />
             <Route path="/" component={MainPage} />
-          </Switch>
+          </Switch>*/}
         </Router>
       </div>
     );
