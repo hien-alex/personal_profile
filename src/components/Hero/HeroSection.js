@@ -30,21 +30,17 @@ const HeroSection = () => {
     opacity: 1,
   });
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={background1} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1 style={fade1} className="leftColumn">
           Hey, I'm {<span style={{ color: "#fec89a" }}>Alex</span>}.
-          <HeroP style={fade2}>
-            details about my life....details about my life....details about my
-            life.... details about my life....details about my life....details
-            about my life....details about my life....
-          </HeroP>
+          <HeroP style={fade2}>Full-Stack Dev - BCIT CST Program</HeroP>
         </HeroH1>
 
-        <HeroImg style={fade3} src={Snoopy_Peanuts} />
+        {/* <HeroImg style={fade3} src={Snoopy_Peanuts} /> */}
       </HeroContent>
     </HeroContainer>
   );

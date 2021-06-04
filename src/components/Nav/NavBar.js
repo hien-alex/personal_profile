@@ -47,7 +47,30 @@ function MyNavBar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks
+                activeClass="active"
+                to="home"
+                smooth={true}
+                duration={350}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Home
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                activeClass="active"
+                to="about"
+                smooth={true}
+                duration={350}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="contact">Contact</NavLinks>

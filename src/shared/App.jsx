@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import NavSideBar from "../components/Nav/NavSideBar";
 import HeroSection from "../components/Hero/HeroSection";
+import About from "../components/About/About";
 
 export default class App extends Component {
   render() {
@@ -15,13 +16,14 @@ export default class App extends Component {
         <CssBaseline />
         <Router>
           <NavSideBar />
-          <HeroSection id="heroSection" />
+          <HeroSection id="home" />
+          <About />
           {/* <Switch>
             <Route path="/about" component={AboutMe} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={ContactMe} />
             <Route path="/" component={MainPage} />
-          </Switch> */}
+          </Switch>*/}
         </Router>
       </div>
     );
