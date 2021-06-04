@@ -88,12 +88,15 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
-  &:active {
-    border-bottom: 5px solid silver;
+  &.active {
+    color: white;
+    border-bottom: 5px solid #fec89a;
   }
 
   &:hover {
     color: white;
     text-decoration: none;
+    border-bottom: 5px solid #fec89a;
+    transition: 0.3s;
   }
 `;

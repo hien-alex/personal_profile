@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
   background: #white;
   justify-content: space-between;
   padding: 0 30px;
-  height: 90vh;
+  height: 95vh;
   position: relative;
   z-index: 1;
 `;
