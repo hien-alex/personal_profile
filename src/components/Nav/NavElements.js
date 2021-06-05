@@ -80,7 +80,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: white;
+  color: #e5e5e5;
   display: flex;
   align-items: center;
   text-decoration: none;

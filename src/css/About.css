@@ -1,0 +1,21 @@
+.top-left {
+  position: absolute;
+  margin-top: -2vh;
+  margin-left: -5vw;
+  border-left: 10px solid black;
+  border-top: 10px solid black;
+  height: 50vh;
+  width: 70vw;
+  transition: 0.5s;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -40vh;
+  right: 5vw;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  height: 40vh;
+  width: 70vw;
+  transition: 0.5s;
+}

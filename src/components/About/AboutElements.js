@@ -2,12 +2,13 @@ import styled, { css } from "styled-components/macro";
 import { useSpring, animated } from "react-spring";
 
 export const AboutContainer = styled.div`
-  background: #white;
+  background: #e5e5e5;
   justify-content: space-between;
   padding: 0 30px;
-  height: 95vh;
+  height: 94vh;
   position: relative;
   z-index: 1;
+  margin-top: 10px;
 `;
 
 export const AboutContent = styled.div`
@@ -57,5 +58,31 @@ export const AboutP = styled(animated.p)`
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
+  }
+`;
+
+export const TopLeft = styled(animated.div)`
+  position: absolute;
+  margin-top: -2vh;
+  margin-left: -5vw;
+  border-left: 10px solid black;
+  border-top: 10px solid black;
+  height: 50vh;
+  width: 75vw;
+  transition: 0.5s;
+`;
+
+export const BottomRight = styled(animated.div)`
+  position: absolute;
+  bottom: -40vh;
+  right: 5vw;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  height: 60vh;
+  width: 70vw;
+  transition: 0.5s;
+
+  @media screen and (min-height: 800px) {
+    bottom: -50vh;
   }
 `;
