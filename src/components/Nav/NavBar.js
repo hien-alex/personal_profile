@@ -67,7 +67,7 @@ function MyNavBar({ toggle }) {
                 duration={350}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-60}
               >
                 About
               </NavLinks>
