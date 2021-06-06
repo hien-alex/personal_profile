@@ -41,45 +41,25 @@ function MyNavBar({ toggle }) {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Alex Hien</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                activeClass="active"
-                to="home"
-                smooth={true}
-                duration={350}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Home
+              <NavLinks href="https://github.com/hien-alex" target="_blank">
+                Github
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                activeClass="active"
-                to="about"
-                smooth={true}
-                duration={350}
-                spy={true}
-                exact="true"
-                offset={-60}
+                href="https://www.linkedin.com/in/alex-hien-496939213/"
+                target="_blank"
               >
-                About
+                LinkedIn
               </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="projects">Projects</NavLinks>
             </NavItem>
           </NavMenu>
-          <div />
+          <span style={{ color: "#fec89a" }}>Alex</span>
         </NavbarContainer>
       </Nav>
     </>

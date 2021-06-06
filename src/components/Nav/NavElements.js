@@ -48,18 +48,12 @@ export const NavLogo = styled(Link)`
 `;
 
 export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: white;
-  }
+  top: 0;
+  right: 0;
+  transform: translate(100%, 20%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
 `;
 
 export const NavMenu = styled.ul`
@@ -79,7 +73,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled.a`
   color: #e5e5e5;
   display: flex;
   align-items: center;
