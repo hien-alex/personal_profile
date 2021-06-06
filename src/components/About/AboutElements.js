@@ -9,6 +9,10 @@ export const AboutContainer = styled.div`
   position: relative;
   z-index: 1;
   margin-top: 10px;
+
+  @media screen and (max-width: 500px) {
+    height: 110vh;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -44,21 +48,23 @@ export const AboutH1 = styled(animated.h1)`
 
   @media screen and (max-width: 500px) {
     font-size: 32px;
+    margin-top: 5vh;
   }
 `;
 
 export const AboutP = styled(animated.p)`
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 20px;
   width: 40vw;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
+  @media screen and (max-width: 500px) {
+    font-size: 13px;
+    width: 50vw;
   }
 `;
 
@@ -96,12 +102,17 @@ export const AboutIMG = styled.img`
   margin-top: -150px;
   margin-left: 12vw;
 
+  @media screen and (min-width: 1500px) {
+    margin-top: 250px;
+  }
+
   @media screen and (max-width: 768px) {
     height: 250px;
     width: 250px;
   }
 
   @media screen and (max-width: 500px) {
+    margin-top: 10px;
     height: 150px;
     width: 150px;
   }
