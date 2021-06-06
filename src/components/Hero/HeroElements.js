@@ -38,8 +38,8 @@ export const HeroContent = styled.div`
   position: absolute;
   padding: 8px 24px;
   text-align: center;
-  // display: flex;
-  // flex-direction: row;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   display: inline;
   left: 7%;

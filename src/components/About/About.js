@@ -6,20 +6,36 @@ import {
   AboutP,
   TopLeft,
   BottomRight,
+  AboutIMG,
 } from "./AboutElements";
 import "../../css/About.css";
+import Snoopy_Peanuts from "../../Images/Snoopy_Peanuts.png";
 
 const About = () => {
   return (
     <AboutContainer id="about">
+      <TopLeft />
       <AboutContent>
-        <TopLeft />
         <AboutH1>
-          About Me.
-          <AboutP>I like dogs. :D</AboutP>
+          About {<span style={{ color: "#fec89a" }}>Me</span>}.
+          <AboutP>
+            I like dogs. :DI like dogs. :DI like dogs. :DI like dogs. :D I like
+            dogs. :DI like dogs. :DI like dogs. :DI like dogs. :D I like dogs.
+            :DI like dogs. :DI like dogs. :DI like dogs. :D I like dogs. :DI
+            like dogs. :DI like dogs. :DI like dogs. :D I like dogs. :DI like
+            dogs. :DI like dogs. :DI like dogs. :D I like dogs. :DI like dogs.
+            :DI like dogs. :DI like dogs. :D I like dogs. :DI like dogs. :DI
+            like dogs. :DI like dogs. :D I like dogs. :DI like dogs. :DI like
+            dogs. :DI like dogs. :D I like dogs. :DI like dogs. :DI like dogs.
+            :DI like dogs. :D I like dogs. :DI like dogs. :DI like dogs. :DI
+            like dogs. :D I like dogs. :DI like dogs. :DI like dogs. :DI like
+            dogs. :D I like dogs. :DI like dogs. :DI like dogs. :DI like dogs.
+            :D I like dogs. :DI like dogs. :DI like dogs. :DI like dogs.
+          </AboutP>
         </AboutH1>
-        <BottomRight />
+        <AboutIMG src={Snoopy_Peanuts} />
       </AboutContent>
+      <BottomRight />
     </AboutContainer>
   );
 };
