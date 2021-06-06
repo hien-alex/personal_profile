@@ -8,17 +8,23 @@ import {
   SidebarMenu,
 } from "./SideBarElements";
 
-const SideBar = ({ toggle, isOpen }) => {
+const SideBar = ({ toggle, isOpen, setConditionalToggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
+    <SidebarContainer isOpen={isOpen} onMouseLeave={setConditionalToggle}>
       <SidebarWrapper>
+        <Icon onClick={toggle}>
+          <CloseIcon />
+        </Icon>
         <SidebarMenu>
-          <SidebarLink to="about">About</SidebarLink>
-          <SidebarLink to="contact">Contact</SidebarLink>
-          <SidebarLink to="projects">Projects</SidebarLink>
+          <SidebarLink onClick={toggle} to="about">
+            About
+          </SidebarLink>
+          <SidebarLink onClick={toggle} to="contact">
+            Contact
+          </SidebarLink>
+          <SidebarLink onClick={toggle} to="projects">
+            Projects
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
