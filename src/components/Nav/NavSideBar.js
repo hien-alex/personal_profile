@@ -8,9 +8,19 @@ const NavSideBar = () => {
   const setToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const setConditionalToggle = () => {
+    if (isOpen) {
+      setIsOpen(!isOpen);
+    }
+  };
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={setToggle} />
+      <Sidebar
+        isOpen={isOpen}
+        toggle={setToggle}
+        setConditionalToggle={setConditionalToggle}
+      />
       <MyNavBar toggle={setToggle} />
     </>
   );

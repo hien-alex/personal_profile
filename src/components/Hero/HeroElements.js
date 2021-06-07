@@ -20,7 +20,7 @@ export const HeroBg = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   overflow: hidden;
 `;
 
@@ -42,7 +42,7 @@ export const HeroContent = styled.div`
   flex-direction: row;
   align-items: center;
   display: inline;
-  left: 7%;
+  left: 3%;
   width: 90%;
   // margin-left: 6vw;
   margin-top: 100px;
