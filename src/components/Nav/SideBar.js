@@ -22,6 +22,8 @@ const SideBar = ({ toggle, isOpen, setConditionalToggle }) => {
             smooth={true}
             offset={-80}
             duration={300}
+            spy={true}
+            activeClass="active"
           >
             Home
           </SidebarLink>
@@ -31,17 +33,10 @@ const SideBar = ({ toggle, isOpen, setConditionalToggle }) => {
             smooth={true}
             offset={-80}
             duration={300}
+            spy={true}
+            activeClass="active"
           >
             About
-          </SidebarLink>
-          <SidebarLink
-            onClick={toggle}
-            to="contact"
-            smooth={true}
-            offset={-80}
-            duration={300}
-          >
-            Contact
           </SidebarLink>
           <SidebarLink
             onClick={toggle}
@@ -49,8 +44,21 @@ const SideBar = ({ toggle, isOpen, setConditionalToggle }) => {
             smooth={true}
             offset={-80}
             duration={300}
+            spy={true}
+            activeClass="active"
           >
             Projects
+          </SidebarLink>
+          <SidebarLink
+            onClick={toggle}
+            to="contact"
+            smooth={true}
+            offset={-80}
+            duration={300}
+            spy={true}
+            activeClass="active"
+          >
+            Contact
           </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>

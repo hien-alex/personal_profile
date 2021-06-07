@@ -47,6 +47,7 @@ export const SidebarWrapper = styled.div`
   display: grid;
   justify-content: center;
 `;
+
 const HoverLink = keyframes`  {
   0% {
     transform: scale(0.999, 0.999) translate3d(0px, 0px, 1px);

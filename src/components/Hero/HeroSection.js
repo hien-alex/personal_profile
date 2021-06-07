@@ -24,11 +24,7 @@ const HeroSection = () => {
     from: { opacity: 0 },
     opacity: 1,
   });
-  const fade3 = useSpring({
-    config: { duration: 4000 },
-    from: { opacity: 0 },
-    opacity: 1,
-  });
+
   return (
     <HeroContainer id="home">
       <HeroBg>

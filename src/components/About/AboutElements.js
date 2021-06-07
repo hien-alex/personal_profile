@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components/macro";
 import { useSpring, animated } from "react-spring";
+import styled, { keyframes } from "styled-components";
 
 export const AboutContainer = styled.div`
   background: #e5e5e5;
@@ -68,6 +68,16 @@ export const AboutP = styled(animated.p)`
   }
 `;
 
+export const frameFade = keyframes`{
+  0% {
+    opacity:0;
+  }
+  
+  50% {
+  opacity:100;
+}}
+`;
+
 export const TopLeft = styled(animated.div)`
   position: absolute;
   margin-top: 5vh;
@@ -78,6 +88,9 @@ export const TopLeft = styled(animated.div)`
   width: 75vw;
   transition: 0.5s;
   z-index: 999;
+  animation-duration: 8s;
+  animation-name: ${frameFade};
+  animation-direction: alternate;
 `;
 
 export const BottomRight = styled(animated.div)`
@@ -90,6 +103,9 @@ export const BottomRight = styled(animated.div)`
   width: 70vw;
   transition: 0.5s;
   z-index: 999;
+  animation-duration: 8s;
+  animation-name: ${frameFade};
+  animation-direction: alternate;
 
   @media screen and (min-height: 800px) {
     bottom: 5vh;
