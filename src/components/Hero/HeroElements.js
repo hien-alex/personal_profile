@@ -42,7 +42,7 @@ export const HeroContent = styled.div`
   flex-direction: row;
   align-items: center;
   display: inline;
-  left: 7%;
+  left: 3%;
   width: 90%;
   // margin-left: 6vw;
   margin-top: 100px;
