@@ -59,7 +59,7 @@ function MyNavBar({ toggle }) {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <span style={{ color: "#fec89a" }}>Alex</span>
+          {/* <span style={{ color: "#fec89a" }}>Alex</span> */}
         </NavbarContainer>
       </Nav>
     </>

@@ -11,7 +11,7 @@ export const SidebarContainer = styled.aside`
   display: grid;
   align-items: center;
   justify-content: center;
-  transition: 0.6s ease-in-out;
+  transition: 0.25s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 
@@ -36,6 +36,7 @@ export const Icon = styled.div`
   &:hover {
     transition: 0.3s;
     transform: translateY(-4px);
+    transform: rotate(90deg);
   }
 `;
 
@@ -71,9 +72,9 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: black;
+    color: #fec89a;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.5s;
     animation-duration: 0.8s;
     animation-name: ${HoverLink};
     animation-iteration-count: infinite;

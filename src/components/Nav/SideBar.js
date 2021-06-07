@@ -16,13 +16,40 @@ const SideBar = ({ toggle, isOpen, setConditionalToggle }) => {
           <CloseIcon />
         </Icon>
         <SidebarMenu>
-          <SidebarLink onClick={toggle} to="about">
+          <SidebarLink
+            onClick={toggle}
+            to="home"
+            smooth={true}
+            offset={-80}
+            duration={300}
+          >
+            Home
+          </SidebarLink>
+          <SidebarLink
+            onClick={toggle}
+            to="about"
+            smooth={true}
+            offset={-80}
+            duration={300}
+          >
             About
           </SidebarLink>
-          <SidebarLink onClick={toggle} to="contact">
+          <SidebarLink
+            onClick={toggle}
+            to="contact"
+            smooth={true}
+            offset={-80}
+            duration={300}
+          >
             Contact
           </SidebarLink>
-          <SidebarLink onClick={toggle} to="projects">
+          <SidebarLink
+            onClick={toggle}
+            to="projects"
+            smooth={true}
+            offset={-80}
+            duration={300}
+          >
             Projects
           </SidebarLink>
         </SidebarMenu>

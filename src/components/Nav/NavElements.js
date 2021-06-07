@@ -28,6 +28,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 0px;
   max-width: 100%;
+  margin-left: 1rem;
 `;
 
 export const NavLogo = styled(Link)`
@@ -61,7 +62,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: 90px;
+  margin-right: 50px;
   margin-top: 12px;
 
   @media screen and (max-width: 768px) {
