@@ -41,6 +41,7 @@ export const AboutH1 = styled(animated.h1)`
   margin-top: 2vh;
   margin-bottom: 7vh;
   margin-left: -2vw;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -87,7 +88,7 @@ export const TopLeft = styled(animated.div)`
   height: 50vh;
   width: 75vw;
   transition: 0.5s;
-  z-index: 999;
+  z-index: 1;
   animation-duration: 8s;
   animation-name: ${frameFade};
   animation-direction: alternate;
@@ -102,7 +103,7 @@ export const BottomRight = styled(animated.div)`
   height: 60vh;
   width: 70vw;
   transition: 0.5s;
-  z-index: 999;
+  z-index: 1;
   animation-duration: 8s;
   animation-name: ${frameFade};
   animation-direction: alternate;
@@ -117,6 +118,7 @@ export const AboutIMG = styled.img`
   width: 400px;
   margin-top: -150px;
   margin-left: 12vw;
+  z-index: 10;
 
   @media screen and (min-width: 1500px) {
     margin-top: 250px;
