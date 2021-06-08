@@ -8,7 +8,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import NavSideBar from "../components/Nav/NavSideBar";
 import HeroSection from "../components/Hero/HeroSection";
 import About from "../components/About/About";
-import { ProjectsContainer } from "../components/Projects/ProjectsElements";
+import ProjectsSection from "../components/Projects/ProjectsSection";
 
 export default class App extends Component {
   render() {
@@ -19,7 +19,7 @@ export default class App extends Component {
           <NavSideBar />
           <HeroSection />
           <About />
-          <ProjectsContainer id="projects" />
+          <ProjectsSection />
           {/* <Switch>
             <Route path="/about" component={AboutMe} />
             <Route path="/projects" component={Projects} />
