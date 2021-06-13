@@ -28,6 +28,7 @@ const projectCardStyles = makeStyles({
     flexDirection: "column",
   },
   media: {
+    marginTop: "5vh",
     objectFit: "contain",
     maxHeight: "40%",
     maxWidth: "100%",
@@ -38,6 +39,7 @@ const projectCardStyles = makeStyles({
     alignSelf: "start",
     justifySelf: "center",
     marginTop: "1rem",
+    marginLeft: "2vw",
   },
 });
 
