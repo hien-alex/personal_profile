@@ -7,3 +7,8 @@
   grid-column-start: 3;
   grid-column-end: span col3-start;
 }
+
+textarea {
+  resize: none;
+  overflow-y: scroll;
+}

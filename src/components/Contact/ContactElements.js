@@ -46,7 +46,7 @@ export const ContactForm = () => {
           <label style={{ fontSize: "2rem" }}>Message</label>
           <Form.Control
             as="textarea"
-            rows="4"
+            rows="5"
             placeholder="Enter Message..."
           ></Form.Control>
         </div>
