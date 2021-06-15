@@ -44,6 +44,7 @@ function MyNavBar({ toggle }) {
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
+          {/* <div style={{ color: "white" }}>Alex</div> */}
           <NavMenu>
             <NavItem>
               <NavLinks href="https://github.com/hien-alex" target="_blank">

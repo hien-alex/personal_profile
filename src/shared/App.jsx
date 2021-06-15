@@ -9,6 +9,7 @@ import NavSideBar from "../components/Nav/NavSideBar";
 import HeroSection from "../components/Hero/HeroSection";
 import About from "../components/About/About";
 import ProjectsSection from "../components/Projects/ProjectsSection";
+import ContactSection from "../components/Contact/ContactSection";
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends Component {
           <HeroSection />
           <About />
           <ProjectsSection />
+          <ContactSection />
           {/* <Switch>
             <Route path="/about" component={AboutMe} />
             <Route path="/projects" component={Projects} />
