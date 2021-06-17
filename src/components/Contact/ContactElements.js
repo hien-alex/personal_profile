@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Form from "react-bootstrap/Form";
 import { Button } from "@material-ui/core";
+import React from "react";
 import "../../css/Contact.css";
+import axios from "axios";
 
 export const ContactBackground = styled.div`
   height: 90vh;
@@ -30,28 +32,53 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactForm = () => {
+  const [buttonDisabled, setButtonDisabled] = React.useState(false);
+  const [inputName, setInputName] = React.useState("");
+  const [inputEmail, setInputEmail] = React.useState("");
+  const [inputMessage, setInputMessage] = React.useState("");
+
+  const handleSubmit = () => {
+    setButtonDisabled(true);
+  };
+
   return (
     <Form className="mainCol">
       <Form.Group className="text-left">
         <label style={{ fontSize: "6rem" }}>Let's talk</label>
         <div className="formInputs">
           <label style={{ fontSize: "2rem" }}>Full Name</label>
-          <Form.Control type="text" placeholder="Full Name"></Form.Control>
+          <Form.Control
+            onChange={(e) => setInputName(e.target.value)}
+            name="name"
+            type="text"
+            placeholder="Full Name"
+          ></Form.Control>
         </div>
         <div className="formInputs">
           <label style={{ fontSize: "2rem" }}>Email</label>
-          <Form.Control type="email" placeholder="Email Address"></Form.Control>
+          <Form.Control
+            onChange={(e) => setInputEmail(e.target.value)}
+            type="email"
+            placeholder="Email Address"
+          ></Form.Control>
         </div>
         <div className="formInputs">
           <label style={{ fontSize: "2rem" }}>Message</label>
           <Form.Control
+            onChange={(e) => setInputMessage(e.target.value)}
             as="textarea"
             rows="5"
             placeholder="Enter Message..."
           ></Form.Control>
         </div>
       </Form.Group>
-      <Button size="large" color="inherit" variant="text" disabled={false}>
+      <Button
+        onClick={() => handleSubmit()}
+        size="large"
+        color="inherit"
+        variant="text"
+        disabled={buttonDisabled}
+      >
         Send
       </Button>
     </Form>

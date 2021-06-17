@@ -10,6 +10,7 @@ import HeroSection from "../components/Hero/HeroSection";
 import About from "../components/About/About";
 import ProjectsSection from "../components/Projects/ProjectsSection";
 import ContactSection from "../components/Contact/ContactSection";
+import Home from "../components/Home";
 
 export default class App extends Component {
   render() {
@@ -17,17 +18,13 @@ export default class App extends Component {
       <div>
         <CssBaseline />
         <Router>
-          <NavSideBar />
-          <HeroSection />
-          <About />
-          <ProjectsSection />
-          <ContactSection />
+          <Route exact path="/" component={Home}></Route>
           {/* <Switch>
             <Route path="/about" component={AboutMe} />
             <Route path="/projects" component={Projects} />
             <Route path="/contact" component={ContactMe} />
-            <Route path="/" component={MainPage} />
-          </Switch>*/}
+            <Route exact path="/" component={MainPage} />
+          </Switch> */}
         </Router>
       </div>
     );
