@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const sendGrid = require("@sendgrid/mail");
+const { stringify } = require("querystring");
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use((req, res, next) => {
 });
 
 app.post("/api/email", (req, res, next) => {
+  console.log("there" + req.body.name);
   sendGrid.setApiKey(
     "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"
   );
