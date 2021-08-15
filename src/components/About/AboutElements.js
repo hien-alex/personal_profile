@@ -33,6 +33,14 @@ export const AboutContent = styled.div`
     flex-direction: column;
     margin-top: 10px;
   }
+
+  @media screen and (min-height: 900px) {
+    margin-top: 200px;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin-top: 35px;
+  }
 `;
 
 export const AboutH1 = styled(animated.h1)`
@@ -66,6 +74,10 @@ export const AboutP = styled(animated.p)`
   @media screen and (max-height: 500px) {
     font-size: 13px;
     width: 50vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 12.5px;
   }
 `;
 
@@ -128,5 +140,14 @@ export const AboutIMG = styled.img`
     margin-top: 10px;
     height: 150px;
     width: 150px;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 150px;
+    width: 150px;
+  }
+
+  @media screen and (max-height: 500px) {
+    display: none;
   }
 `;
