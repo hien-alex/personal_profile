@@ -13,6 +13,10 @@ export const ContactBackground = styled.div`
   background: #e5e5e5;
   position: absolute;
 
+  @media screen and (min-height: 800px) {
+    height: 80vh;
+  }
+
   @media screen and (max-height: 630px) {
     height: 130vh;
   }

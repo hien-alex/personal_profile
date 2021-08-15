@@ -11,4 +11,8 @@
 textarea {
   resize: none;
   overflow-y: scroll;
+
+  @media screen and (max-height: 400px) {
+    height: 40vh;
+  }
 }
