@@ -33,7 +33,7 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1 style={fade1} className="leftColumn">
           Hey, I'm {<span style={{ color: "#fec89a" }}>Alex</span>}.
-          <HeroP style={fade2}>Full-Stack Dev - BCIT CST Program</HeroP>
+          <HeroP style={fade2}>BCIT - Computer Systems Technology</HeroP>
         </HeroH1>
 
         {/* <HeroImg style={fade3} src={Snoopy_Peanuts} /> */}
