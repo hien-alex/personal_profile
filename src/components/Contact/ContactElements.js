@@ -12,6 +12,10 @@ export const ContactBackground = styled.div`
   width: 100%;
   background: #e5e5e5;
   position: absolute;
+
+  @media screen and (max-height: 630px) {
+    height: 130vh;
+  }
 `;
 
 export const ContactContainer = styled.div`
