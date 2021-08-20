@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import Form from "react-bootstrap/Form";
 import { Button } from "@material-ui/core";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../css/Contact.css";
 import axios from "axios";
-import { tsConstructorType } from "@babel/types";
 
 export const ContactBackground = styled.div`
   height: 90vh;
@@ -47,29 +46,30 @@ export const ContactForm = () => {
   const [inputMessage, setInputMessage] = React.useState("");
   const [emailSent, setEmailSent] = React.useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setButtonDisabled(true);
+    await postSubmission();
+  };
 
-    axios.post("/api/email", {
-      name: inputName,
-      email: inputEmail,
-      message: inputMessage,
-    });
-    // .then((res) => {
-    //   if (res.data.success) {
-    //     setButtonDisabled(true), setEmailSent(true);
-    //   } else {
-    //     setButtonDisabled(false), setEmailSent(false);
-    //   }
-    // })
-    // .catch((err) => {
-    //   setButtonDisabled(false), setEmailSent(false);
-    // });
+  const postSubmission = async () => {
+    const payLoad = {
+      Name: inputName,
+      Email: inputEmail,
+      Message: inputMessage,
+    };
+
+    try {
+      const result = await axios.post(
+        "https://submit-form.com/sK8uNHa9",
+        payLoad
+      );
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
-    <Form className="mainCol">
+    <Form action="https://submit-form.com/sK8uNHa9" className="mainCol">
       <Form.Group className="text-left">
         <label style={{ fontSize: "6rem" }}>Let's talk</label>
         <div className="formInputs">

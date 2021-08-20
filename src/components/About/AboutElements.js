@@ -27,7 +27,7 @@ export const AboutContent = styled.div`
   left: 7%;
   width: 90%;
   // margin-left: 6vw;
-  margin-top: 100px;
+  margin-top: 12.5vh;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -68,7 +68,7 @@ export const AboutP = styled(animated.p)`
   width: 40vw;
 
   @media screen and (max-height: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media screen and (max-height: 500px) {
