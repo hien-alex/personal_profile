@@ -16,3 +16,13 @@ textarea {
     height: 40vh;
   }
 }
+
+.success-msg {
+  color: #57a773;
+  padding: 15px 15px;
+}
+
+.fail-msg {
+  color: #ee6352;
+  padding: 15px 15px;
+}

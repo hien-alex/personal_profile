@@ -44,7 +44,7 @@ export const ContactForm = () => {
   const [inputName, setInputName] = React.useState("");
   const [inputEmail, setInputEmail] = React.useState("");
   const [inputMessage, setInputMessage] = React.useState("");
-  const [emailSent, setEmailSent] = React.useState(false);
+  const [emailSent, setEmailSent] = React.useState(null);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -59,11 +59,21 @@ export const ContactForm = () => {
     };
 
     try {
-      const result = await axios.post(
-        "https://submit-form.com/sK8uNHa9",
-        payLoad
-      );
+      const result = await axios
+        .post("https://submit-form.com/sK8uNHa9", payLoad)
+        .then((res) => {
+          console.log(res);
+          if (res.status === 200) {
+            setButtonDisabled(true);
+            setEmailSent(true);
+          } else {
+            setButtonDisabled(false);
+            setEmailSent(false);
+          }
+        });
     } catch (error) {
+      setButtonDisabled(false);
+      setEmailSent(false);
       console.log(error);
     }
   };
@@ -114,6 +124,14 @@ export const ContactForm = () => {
       >
         Send
       </Button>
+      {emailSent === true && (
+        <p className="d-inline-block success-msg">Email successfully sent!</p>
+      )}
+      {emailSent === false && (
+        <p className="d-inline-block fail-msg">
+          Unable to send. Please try again later!
+        </p>
+      )}
     </Form>
   );
 };
