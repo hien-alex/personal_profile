@@ -44,7 +44,7 @@ export const AboutContent = styled.div`
 `;
 
 export const AboutH1 = styled(animated.h1)`
-  text-align: left;
+  text-align: center;
   font-size: 48px;
   margin-top: 2vh;
   margin-bottom: 7vh;
@@ -62,22 +62,22 @@ export const AboutH1 = styled(animated.h1)`
 `;
 
 export const AboutP = styled(animated.p)`
-  text-align: left;
-  font-size: 22px;
+  text-align: center;
+  font-size: 20px;
   margin-top: 20px;
   width: 40vw;
 
   @media screen and (max-height: 768px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   @media screen and (max-height: 500px) {
-    font-size: 13px;
+    font-size: 12px;
     width: 50vw;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 12.5px;
+    font-size: 11.5px;
   }
 `;
 
