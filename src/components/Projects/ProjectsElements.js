@@ -6,8 +6,6 @@ import CardHeader from "@material-ui/core/CardHeader";
 import "../../css/ProjectsSection.css";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
-import Snoopy_Peanuts from "../../Images/Snoopy_Peanuts.png";
-import background1 from "../../Videos/background1.mp4";
 
 export const ProjectsContainer = styled.div`
   height: 90vh;
@@ -28,9 +26,8 @@ const projectCardStyles = makeStyles({
     flexDirection: "column",
   },
   media: {
-    marginTop: "5vh",
     objectFit: "contain",
-    maxHeight: "40%",
+    maxHeight: "80%",
     maxWidth: "100%",
     alignSelf: "center",
   },
@@ -43,19 +40,24 @@ const projectCardStyles = makeStyles({
   },
 });
 
-export const ProjectsCards = () => {
+export const ProjectsCards = ({ projectImage, projectLink, projectName }) => {
   const makeStyle = projectCardStyles();
   return (
-    <CardActionArea>
+    <CardActionArea component="a" href={projectLink} target="_blank">
       <Card className={makeStyle.root}>
-        <CardHeader className={makeStyle.header} title="Project1"></CardHeader>
+        <CardHeader
+          className={makeStyle.header}
+          title={projectName}
+        ></CardHeader>
         <hr />
         <CardMedia
           className={makeStyle.media}
           component="img"
-          alt="Project 1 Img."
-          image={Snoopy_Peanuts}
-          title="Project 1 Card"
+          alt={projectName}
+          image={projectImage}
+          title={projectName}
+          link={projectLink}
+          target="_blank"
         />
       </Card>
     </CardActionArea>
