@@ -75,10 +75,6 @@ export const AboutP = styled(animated.p)`
     font-size: 12px;
     width: 50vw;
   }
-
-  @media screen and (max-width: 500px) {
-    font-size: 11.5px;
-  }
 `;
 
 export const frameFade = keyframes`{
