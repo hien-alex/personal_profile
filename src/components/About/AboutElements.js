@@ -63,7 +63,7 @@ export const AboutH1 = styled(animated.h1)`
 
 export const AboutP = styled(animated.p)`
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 20px;
   width: 40vw;
 
