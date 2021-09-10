@@ -1,14 +1,12 @@
 import "../../css/Nav.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
-import { useSpring, animated } from "react-spring";
-import { Spring } from "react-spring";
-import styled, { css } from "styled-components/macro";
 import { FaBars } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -16,27 +14,6 @@ import {
 } from "./NavElements";
 
 function MyNavBar({ toggle }) {
-  // const fade = useSpring({
-  //   config: { duration: 1000 },
-  //   from: { opacity: 0 },
-  //   opacity: 1,
-  // });
-  // const fade1 = useSpring({
-  //   config: { duration: 1500 },
-  //   from: { opacity: 0 },
-  //   opacity: 1,
-  // });
-  // const fade2 = useSpring({
-  //   config: { duration: 2000 },
-  //   from: { opacity: 0 },
-  //   opacity: 1,
-  // });
-  // const fade3 = useSpring({
-  //   config: { duration: 2300 },
-  //   from: { opacity: 0 },
-  //   opacity: 1,
-  // });
-
   return (
     <>
       <Nav>
@@ -44,13 +21,46 @@ function MyNavBar({ toggle }) {
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
-          {/* <div style={{ color: "white" }}>Alex</div> */}
           <NavMenu>
             <NavItem>
-              <NavLinks href="https://github.com/hien-alex" target="_blank">
-                Github
-              </NavLinks>
+              <div className="dropdown dropDownMenu">
+                <a
+                  className="dropDownMenu dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Github
+                </a>
+
+                <ul
+                  className="dropdown-menu dropDownItem"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <li>
+                    <a
+                      className="dropdown-item dropDownItem"
+                      href="https://github.com/hien-alex"
+                      target="_blank"
+                    >
+                      Personal
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      href="https://github.com/alex-hien"
+                      target="_blank"
+                    >
+                      Academic
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </NavItem>
+
             <NavItem>
               <NavLinks
                 href="https://www.linkedin.com/in/alex-hien-496939213/"

@@ -87,6 +87,6 @@ export const NavLinks = styled.a`
     color: white;
     text-decoration: none;
     border-bottom: 5px solid #fec89a;
-    transition: 0.2s;
+    transition: 0.15s;
   }
 `;
