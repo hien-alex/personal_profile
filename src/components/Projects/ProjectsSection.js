@@ -7,7 +7,7 @@ const ProjectsSection = () => {
       <ProjectsCards
         projectImage={pathFinderImg}
         projectLink={"https://vigilant-noether-c11536.netlify.app/"}
-        projectName={"Visual Pathfinder"}
+        projectName={"Visual Pathfinder Project"}
       />
     </ProjectsContainer>
   );
