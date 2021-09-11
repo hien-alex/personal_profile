@@ -10,6 +10,7 @@ import {
 } from "./AboutElements";
 import "../../css/About.css";
 import Snoopy_Peanuts from "../../Images/Snoopy_Peanuts.png";
+import me from "../../Images/me.JPG";
 import { useSpring, animated } from "react-spring";
 
 const About = () => {
@@ -45,7 +46,7 @@ const About = () => {
             developer!
           </AboutP>
         </AboutH1>
-        <AboutIMG src={Snoopy_Peanuts} />
+        <AboutIMG src={me} />
       </AboutContent>
       <BottomRight />
     </AboutContainer>
