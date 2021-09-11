@@ -25,7 +25,7 @@ function MyNavBar({ toggle }) {
             <NavItem>
               <div className="dropdown dropDownMenu">
                 <a
-                  className="dropDownMenu dropdown-toggle"
+                  className="dropDownMenu"
                   href="#"
                   role="button"
                   id="dropdownMenuLink"
