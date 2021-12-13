@@ -18,3 +18,13 @@
 .dropDownItem a:hover {
   color: black;
 }
+
+.gitLogo {
+  height: 100%;
+  width: 100%;
+}
+
+.linkedLogo {
+  height: 70%;
+  width: 100%;
+}

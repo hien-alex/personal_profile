@@ -4,6 +4,8 @@ import { FaBars } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
+import gitImage from "../../Images/gitLogo.png";
+import linkedInImage from "../../Images/linkedInLogo.png";
 import {
   Nav,
   NavbarContainer,
@@ -31,8 +33,9 @@ function MyNavBar({ toggle }) {
                   id="dropdownMenuLink"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  src=""
                 >
-                  Github
+                  <img className="gitLogo" src={gitImage}></img>
                 </a>
 
                 <ul
@@ -66,7 +69,7 @@ function MyNavBar({ toggle }) {
                 href="https://www.linkedin.com/in/alex-hien-496939213/"
                 target="_blank"
               >
-                LinkedIn
+                <img className="linkedLogo" src={linkedInImage}></img>
               </NavLinks>
             </NavItem>
           </NavMenu>
