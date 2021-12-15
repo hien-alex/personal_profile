@@ -1,0 +1,26 @@
+.tester {
+  width: 50vw;
+  height: 50vh;
+}
+
+.carouselItem {
+  position: relative;
+  padding-top: 50px;
+  width: 40vw;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.caption {
+  padding-top: 5vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.courselCSS {
+  position: relative;
+  background-color: black;
+  text-align: center;
+}
