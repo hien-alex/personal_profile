@@ -43,12 +43,14 @@ const ProjectsSection = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100"
-            className="carouselItem"
-            src={homegrownImg}
-            alt="Second slide"
-          />
+          <a href="https://homegrown-bc.herokuapp.com/" target="_blank">
+            <img
+              className="d-block w-100"
+              className="carouselItem"
+              src={homegrownImg}
+              alt="Second slide"
+            />
+          </a>
           <Carousel.Caption className="caption">
             <h3>Homegrown Project</h3>
             <p>
