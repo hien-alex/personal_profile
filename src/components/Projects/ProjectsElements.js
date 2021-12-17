@@ -14,7 +14,6 @@ export const ProjectsContainer = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-row: span 2 / auto;
 `;
 
 const projectCardStyles = makeStyles({
