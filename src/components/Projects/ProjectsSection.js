@@ -1,6 +1,6 @@
 import { ProjectsContainer, ProjectsCards } from "./ProjectsElements";
 import pathFinderImg from "../../Images/pathfinder.png";
-import meImg from "../../Images/me.JPG";
+import homegrownImg from "../../Images/homegrown.png";
 import Carousel from "react-bootstrap/Carousel";
 import "../../css/ProjectsSection.css";
 
@@ -18,49 +18,47 @@ const ProjectsSection = () => {
     //     projectName={"Visual Pathfinder Project"}
     //   /> */}
     // </ProjectsContainer>
-
-    <Carousel pause="hover" fade className="courselCSS">
-      <Carousel.Item interval={5000}>
-        <a href="https://ahien-pathfinder-project.netlify.app/" target="_blank">
+    <div className="carouselContainer" id="projects">
+      <h1 className="carouselTitle">Personal Projects</h1>
+      <Carousel pause="hover" fade className="courselCSS">
+        <Carousel.Item interval={5000}>
+          <a
+            href="https://ahien-pathfinder-project.netlify.app/"
+            target="_blank"
+          >
+            <img
+              className="d-block w-100"
+              className="carouselItem"
+              src={pathFinderImg}
+              alt="First slide"
+            />
+          </a>
+          <Carousel.Caption className="caption">
+            <h3>Visual Pathfinder Project</h3>
+            <p>
+              Visual pathfinder that shows how conventional algorithms search.
+            </p>
+            <br />
+            <br />
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
             className="carouselItem"
-            src={pathFinderImg}
-            alt="First slide"
+            src={homegrownImg}
+            alt="Second slide"
           />
-        </a>
-        <Carousel.Caption className="caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          className="carouselItem"
-          src={meImg}
-          alt="Second slide"
-        />
-        <Carousel.Caption className="caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <img
-          className="d-block w-100"
-          className="carouselItem"
-          src={pathFinderImg}
-          alt="Third slide"
-        />
-        <Carousel.Caption className="caption">
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          <Carousel.Caption className="caption">
+            <h3>Homegrown Project</h3>
+            <p>
+              BCIT practicum demo project. An online platform for bookstores to
+              sell books during COVID-19 pandemic.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 };
 

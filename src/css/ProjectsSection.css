@@ -1,15 +1,14 @@
-.tester {
-  width: 50vw;
-  height: 50vh;
-}
-
 .carouselItem {
   position: relative;
   padding-top: 50px;
   width: 40vw;
-  height: 60vh;
+  height: 50vh;
   justify-content: center;
   text-align: center;
+}
+
+.carouselItem:hover {
+  transform: scale(1.05);
 }
 
 .caption {
@@ -23,4 +22,17 @@
   position: relative;
   background-color: black;
   text-align: center;
+  padding-top: 15px;
+}
+
+.carouselContainer {
+  height: 90vh;
+  width: 100%;
+  background: black;
+}
+
+.carouselTitle {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
 }
