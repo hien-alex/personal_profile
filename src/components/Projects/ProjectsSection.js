@@ -2,6 +2,7 @@ import { ProjectsContainer, ProjectsCards } from "./ProjectsElements";
 import pathFinderImg from "../../Images/pathfinder.png";
 import homegrownImg from "../../Images/homegrown.png";
 import Carousel from "react-bootstrap/Carousel";
+import todoList from "../../Images/todoList.png";
 import "../../css/ProjectsSection.css";
 
 const ProjectsSection = () => {
@@ -36,7 +37,8 @@ const ProjectsSection = () => {
           <Carousel.Caption className="caption">
             <h3>Visual Pathfinder Project</h3>
             <p>
-              Visual pathfinder that shows how conventional algorithms search.
+              Visual pathfinder to demonstrate how algorithms search from node
+              to node. Algorithms include DFS, BFS, Dijkstra's, A*.
             </p>
             <br />
             <br />
@@ -56,6 +58,23 @@ const ProjectsSection = () => {
             <p>
               BCIT practicum demo project. An online platform for bookstores to
               sell books during COVID-19 pandemic.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <a href="https://ahien-todolist-project.netlify.app/" target="_blank">
+            <img
+              className="d-block w-100"
+              className="carouselItem"
+              src={todoList}
+              alt="Second slide"
+            />
+          </a>
+          <Carousel.Caption className="caption">
+            <h3>Task List Project</h3>
+            <p>
+              Personal task list project. Front-end developed using React,
+              JavaScript, and CSS. Tasks stored in localStorage.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
