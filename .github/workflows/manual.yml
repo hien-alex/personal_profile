@@ -30,4 +30,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello ${{ github.actor }}"
+      run: echo "Hello ${{ https://github.com/hien-alex/personal_profile/edit/master/.github/workflows/manual.yml##./ }}"
