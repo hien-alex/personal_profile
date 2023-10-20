@@ -32,6 +32,7 @@ jobs:
     - name: Send greeting
       id: test
       run: |
+        github.rweg
         echo "::set-output name=TEST0::"000""
         echo "::set-output name=TEST1::"123""
     - name: test greeting
