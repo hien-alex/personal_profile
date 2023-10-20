@@ -31,7 +31,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       id: test
-      run: echo "::set-output name=TEST::${https://github.com/hien-alex/personal_profile/edit/master##*/}"
+      run: echo "::set-output name=TEST::${"123"}"
     - name: test greeting
       run: echo "${steps.test.outputs.TEST}"
 
