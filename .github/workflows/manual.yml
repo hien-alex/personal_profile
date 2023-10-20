@@ -33,6 +33,6 @@ jobs:
       id: test
       run: echo "::set-output name=TEST::"123""
     - name: test greeting
-      run: echo "${steps.test.outputs.TEST}"
+      run: echo "${{steps.test.outputs.TEST}}"
 
     
