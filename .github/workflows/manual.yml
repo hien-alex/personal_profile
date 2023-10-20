@@ -37,6 +37,7 @@ jobs:
         echo "::set-output name=TEST0::"000""
         echo "::set-output name=TEST1::"123""
     - name: test greeting
+      if: always()
       run: |
         echo "${{steps.test.outputs.TEST0}}"
         echo "${{steps.test.outputs.TEST1}}"
