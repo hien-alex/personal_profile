@@ -31,8 +31,12 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       id: test
-      run: echo "::set-output name=TEST::"123""
+      run: |
+        echo "::set-output name=TEST0::"000""
+        echo "::set-output name=TEST1::"123""
     - name: test greeting
-      run: echo "${{steps.test.outputs.TEST}}"
+      run: |
+        echo "${{steps.test.outputs.TEST0}}"
+        echo "${{steps.test.outputs.TEST1}}"
 
     
