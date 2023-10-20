@@ -30,4 +30,9 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello ${{ https://github.com/hien-alex/personal_profile/edit/master/.github/workflows/manual.yml##./ }}"
+      id: test
+      run: echo "::set-output name=TEST::${https://github.com/hien-alex/personal_profile/edit/master##*/}"
+    - name: test greeting
+      run: echo ${steps.test.outputs.TEST}
+
+    
